@@ -137,5 +137,14 @@ The following hypotheses will be tested during regression analysis:
 This understanding of the dataset provides the foundation for data cleaning, exploratory analysis, feature engineering, and multiple linear regression to identify the key drivers of monthly sales.
 
 
-Missing Values: 14 missing values were identified in the customer_rating and competitor_distance_km columns. Since both are numerical predictor variables and the proportion of missing data was small, missing values were replaced using the respective column means. No rows were removed because the target variable (monthly_sales) contained no missing values.
+**Missing Values:** 14 missing values were identified in the customer_rating and competitor_distance_km columns. Since both are numerical predictor variables and the proportion of missing data was small, missing values were replaced using the respective column means. No rows were removed because the target variable (monthly_sales) contained no missing values.
+
+
+**Business Conclusion for Multiple Regression Task**
+
+* **Marketing spend** has a significant positive effect on monthly sales, suggesting that increased marketing investment can help drive revenue.
+* **Footfall** is the strongest numerical predictor of sales, indicating that attracting more customers should be a key business priority.
+* **Average discount percentage** has a significant negative relationship with sales, suggesting that excessive discounting may reduce overall sales revenue or reflect weaker-performing periods.
+* **Store type** significantly influences sales. Airport and Mall stores outperform the reference store type, indicating that store location and format play an important role in sales performance.
+* **Staff count** does not have a statistically significant impact in this model and may require further investigation.
 
