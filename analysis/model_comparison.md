@@ -10,7 +10,7 @@ Three regression models were developed to identify factors influencing monthly s
 * **Dependent Variable:** Monthly Sales
 * **Independent Variable:** Marketing Spend
 
-**R-squared:** *(Insert your R² value)*
+**R-squared:** *(0.16724469112487)*
 
 Marketing spend was found to have a positive and statistically significant relationship with monthly sales (p < 0.05). The model indicates that higher marketing investment is associated with increased sales. However, because only one predictor is included, the model does not account for other operational factors that may influence sales.
 
@@ -21,7 +21,7 @@ Marketing spend was found to have a positive and statistically significant relat
 * **Dependent Variable:** Monthly Sales
 * **Independent Variable:** Footfall
 
-**R-squared:** *(Insert your R² value)*
+**R-squared:** *(0.736285340003311)*
 
 Footfall showed a positive and statistically significant relationship with monthly sales (p < 0.05). The model suggests that stores with more customer visits generally achieve higher sales. Like the previous model, it considers only one predictor and therefore has limited explanatory power.
 
