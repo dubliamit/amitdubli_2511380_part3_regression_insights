@@ -13,12 +13,12 @@ Positive residuals indicate that the model under-predicted sales, while negative
 
 The following records had the largest positive residuals:
 
-| store_id	|  monthly_sales	|  Predictive sales	 |   Residual   |
-| STR-1075	|    763162.45	  |     657721.1622	   |  105441.2878 |
-| STR-1028	|    713611.16	  |     608976.3466	   |  104634.8134 |
-| STR-1026	|    625514.04	  |     523933.4838	   |  101580.5562 |
-| STR-1027	|    795153.84	  |     696706.0486	   |  98447.79135 |
-| STR-1019	|    788087.68	  |     691778.4456	   |  96309.23444 |
+*  | store_id	|  monthly_sales	|  Predictive sales	 |   Residual   |
+*  | STR-1075	|    763162.45	  |     657721.1622	   |  105441.2878 |
+*  | STR-1028	|    713611.16	  |     608976.3466	   |  104634.8134 |
+*  | STR-1026	|    625514.04	  |     523933.4838	   |  101580.5562 |
+*  | STR-1027	|    795153.84	  |     696706.0486	   |  98447.79135 |
+*  | STR-1019	|    788087.68	  |     691778.4456	   |  96309.23444 |
 
 
 These stores performed substantially better than expected. Possible reasons include successful local promotions, strong customer loyalty, or other factors not included in the model.
