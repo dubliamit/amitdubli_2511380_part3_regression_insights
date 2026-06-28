@@ -20,6 +20,16 @@ The following records had the largest positive residuals:
 *  | STR-1027	|    795153.84	  |     696706.0486	   |  98447.79135 |
 *  | STR-1019	|    788087.68	  |     691778.4456	   |  96309.23444 |
 
+## Top 5 Largest Positive Residuals
+
+| Store ID | Actual Sales | Predicted Sales | Residual |
+|-----------|-------------:|----------------:|----------:|
+| STR-1075 | 763,162.45 | 657,721.16 | 105,441.29 |
+| STR-1028 | 713,611.16 | 608,976.35 | 104,634.81 |
+| STR-1026 | 625,514.04 | 523,933.48 | 101,580.56 |
+| STR-1027 | 795,153.84 | 696,706.05 | 98,447.79 |
+| STR-1019 | 788,087.68 | 691,778.45 | 96,309.23 |
+
 
 These stores performed substantially better than expected. Possible reasons include successful local promotions, strong customer loyalty, or other factors not included in the model.
 
