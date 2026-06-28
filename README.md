@@ -136,6 +136,106 @@ The following hypotheses will be tested during regression analysis:
 
 This understanding of the dataset provides the foundation for data cleaning, exploratory analysis, feature engineering, and multiple linear regression to identify the key drivers of monthly sales.
 
+Below is a README section tailored to your project and consistent with the work you've completed.
+
+---
+
+# Regression Approach
+
+Regression analysis was performed to identify the factors associated with monthly sales across retail stores. The analysis began with simple linear regression models to evaluate the relationship between monthly sales and individual variables such as marketing spend and footfall. A multiple linear regression model was then developed by combining several business variables, including marketing spend, footfall, average discount percentage, staff count, and store type dummy variables. The final model was evaluated using R-squared, adjusted R-squared, p-values, and coefficient interpretation to determine the most important drivers of sales.
+
+---
+
+# Dummy Variable Approach
+
+The dataset contained categorical variables that required numerical encoding before they could be included in the regression model.
+
+* **Store Type** was converted into dummy variables:
+
+  * Store_High_Street
+  * Store_Airport
+  * Store_Mall
+
+The omitted store type was used as the **reference category (Residential)**, and all dummy variable coefficients were interpreted relative to this category.
+
+The **holiday_flag** variable was already coded as **0 (Non-Holiday)** and **1 (Holiday)**, so it was already in binary format and did not require additional dummy variable creation.
+
+---
+
+# Model Comparison Summary
+
+Two simple regression models and one multiple regression model were developed and compared.
+
+* The simple regression models showed the individual impact of marketing spend and footfall on monthly sales.
+* The multiple regression model combined several predictors and provided a more comprehensive understanding of sales performance.
+* The final multiple regression model achieved an **R-squared of 0.7998**, meaning it explained approximately **80% of the variation in monthly sales**, which was higher than the simple regression models.
+* The multiple regression model also identified several statistically significant predictors, making it more useful for business decision-making.
+
+---
+
+# Final Model Selected
+
+The **Multiple Linear Regression Model** was selected as the final model because it provided the strongest explanatory power and evaluated multiple business factors simultaneously.
+
+The model included:
+
+* Marketing Spend
+* Footfall
+* Average Discount Percentage
+* Staff Count
+* Store Type (Dummy Variables)
+
+The model achieved:
+
+* **R² = 0.7998**
+* **Adjusted R² = 0.7953**
+
+These results indicate that the model explains approximately **80% of the variation in monthly sales**, making it suitable for identifying key business drivers.
+
+---
+
+# Business Recommendation
+
+Based on the regression analysis, leadership should focus on the variables that showed significant relationships with monthly sales.
+
+* Increase investment in marketing activities that effectively attract customers.
+* Implement initiatives to increase customer footfall, as it was one of the strongest positive predictors of sales.
+* Review discount strategies carefully, since higher average discount percentages were associated with lower monthly sales in the final model.
+* Prioritize investment in high-performing store types such as Airport and Mall stores.
+* Continue monitoring business performance and update the model periodically as new data becomes available.
+
+---
+
+# Assumptions and Limitations
+
+### Assumptions
+
+* A linear relationship exists between the independent variables and monthly sales.
+* Observations are independent of one another.
+* The data used is accurate, complete, and representative of normal business operations.
+* The selected variables capture the primary factors influencing monthly sales.
+
+### Limitations
+
+* Regression identifies **associations**, not cause-and-effect relationships.
+* Approximately **20% of the variation in monthly sales** remains unexplained, suggesting that additional factors such as seasonality, local competition, customer demographics, weather, or economic conditions may also influence sales.
+* The analysis is based on historical data and may not fully predict future performance.
+* Results may change if new variables or additional data are included.
+
+---
+
+# Screenshots Included
+
+The following screenshots are included as evidence of the analysis:
+
+* simple_regression_output
+* multiple_regression_output
+* model_comparison_preview
+* residuals_preview
+
+These screenshots document the regression outputs, model comparison, and residual analysis completed during the project.
+
+
 
 **Missing Values:** 14 missing values were identified in the customer_rating and competitor_distance_km columns. Since both are numerical predictor variables and the proportion of missing data was small, missing values were replaced using the respective column means. No rows were removed because the target variable (monthly_sales) contained no missing values.
 
